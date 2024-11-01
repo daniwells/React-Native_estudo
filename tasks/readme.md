@@ -1,70 +1,74 @@
 # Tasks
 
+Tasks é o projeto de um aplicativo de anotação de tarefas prático e ágil, que permite que você organize o seu dia de forma mais eficaz. 
+
 ## :memo: Requisitos
 
-* Linguagem de programação [```Javascript```]([https://www.typescriptlang.org/docs/](https://developer.mozilla.org/en-US/docs/Web/JavaScript))
-* Framework frontend [``` React Native ```](https://doc.qt.io/qtforpython-6/)
-* Framework backend [```  ```]()
+* Linguagem de programação [```Javascript```](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* Framework frontend [```React Native```](https://reactnative.dev/docs/getting-started)
+* Framework backend [```Express```](https://expressjs.com/)
+* Framework [```Expo```](https://expo.dev/)
 
 ## Tutorial de execução
-Siga o tutorial a baixo caso busque executar o projeto localmente. 
+Siga o tutorial abaixo para executar o projeto localmente.
+
 
 Certifique-se de possuir o *git* instalado, então faça o clone do projeto: 
 
     git clone https://github.com/daniwells/Projeto-Invoice.git
 
-Acesse a raiz do projeto e Realize a instalação das dependências:
+Ao executar o frontend e o backend da aplicação, recomenda-se abrir dois terminais.
 
-    cd Projeto-Invoice
-    pip install -r requirements.txt
+- **Frontend**
+Acesse o frontend do projeto e Realize a instalação das dependências:
 
-Após as configurações iniciais você já pode executar o projeto com o seguinte comando:
+      cd frontend
+      npm install
 
-    python main.py  
+Após isso você pode executar o frontend com o seguinte comando:
+
+    npx expo start
+
+- **Com Iphone**
+  
+O lado do cliente pode ser aberto tanto na web, quanto no celular usando o aplicativo da expo, com ele basta que você escaneie o QR Code que aparece no terminal.
+    
+- **Android Stúdio**
+  
+Com Android Stúdio instalado e o projeto em execução, você deve primeiro abrir um novo dispositivo virtual e pressionar, após isso você pode pressionar a tecla A no terminal onde o projeto está sendo executado, então o programa irá instalar todas as dependências necessárias no emulador e o aplicativo já estará disponível para uso.
+
+- **Backend**
+  
+Para o backend executar o backend, com o reposiório já clonado, você pode executar os seguintes comandos:
+
+      cd backend
+      npm run start
+      npm run dev
 
 ## :computer: Interface
-<img src="https://github.com/user-attachments/assets/31b4f975-6ebe-4dc4-b38a-b79f3238d969" width="500" height="300" />
+![image](https://github.com/user-attachments/assets/36166ff9-4fda-40cc-8cbf-ef36ea458bc7)
 
-Na página inicial, as duas opções para a principal funcionalidade da ferramenta são "escolher o diretório de origem" e "escolher o diretório de destino".
-Ambas as opções devem receber caminhos de pastas do sistema.
-Clique acima e então selecione a pasta onde deseja extrair os invoices.
-Clique abaixo e selecione a pasta onde deseja que o conteúdo extraído seja salvo.
+Esta é a tela principal do aplicativo, onde você pode gerenciar as suas tarefas.
 
-<img src="https://github.com/user-attachments/assets/613e13ee-2687-4b10-b8b0-643418722555" width="300" height="300" />
+![image](https://github.com/user-attachments/assets/ef6819e0-a753-4f32-9796-5eb263d5a84d)
 
-Após confirmar o local, a mensagem de carregamento será mostrada.
-Lembre-se de não fechar o programa enquanto o aplicativo lê os invoices!
+Toda tarefa pode ser marcada como concluída, como apresentado acima.
 
-<img src="https://github.com/user-attachments/assets/0f109e50-c4d6-4cd8-9f57-48dcd22833f5" width="300" height="300" />
+![image](https://github.com/user-attachments/assets/84508431-0822-47bb-8199-e0376e83e0f3)
 
-O processamento pode ser interrompido a qualquer momento pelo usuário ou por algum erro inesperado.
+Ao pressionar o botão de "+" no canto inferior direito da tela, ou pequeno modal irá aparecer para que você possa criar uma nova tarefa. Nesta modal você pode adicionar uma data de entrega da tarefa, além de uma curta descrição.
 
-<img src="https://github.com/user-attachments/assets/a417d6f3-3cdf-4413-9e1e-5bd1f8cfef48" width="300" height="300" />
+![image](https://github.com/user-attachments/assets/452b8a1b-8dc7-4c94-8196-24f260bc3b3b)
 
-A mensagem de êxito é mostrada revelando a quantidade de arquivos classificados no diretório ao final do processo.
+Ao pressionar o ícone de olho no canto superior direito, você pode trocar a disposição das tarefas para mostrar apenas tarefas pendentes.
 
-## :octocat: Equipe
+![image](https://github.com/user-attachments/assets/ec31c160-e811-4740-9576-426f1a81511f)
 
-* **Cauan** [![Static Badge](https://img.shields.io/badge/dokasmn%E2%86%97-blue?style=flat-square)
-](https://github.com/dokasmn)
+Para excluir uma tarefa, é possível arrastar a tarefa para a esquerda ou para a direita.
 
-* **Daniel** [![Static Badge](https://img.shields.io/badge/daniwells%E2%86%97-blue?style=flat-square)
-](https://github.com/daniwells)
+## :octocat: Desenvolvedores
 
-* **Eliel** [![Static Badge](https://img.shields.io/badge/elielschubert%E2%86%97-blue?style=flat-square)
-](https://github.com/elielschubert)
+* **Daniel**
+* **Levi Pinott**
+* **Analice Leite**
 
-* **Eros** [![Static Badge](https://img.shields.io/badge/trevojan%E2%86%97-blue?style=flat-square)
-](https://github.com/trevojan)
-
-* **Gustavo** [![Static Badge](https://img.shields.io/badge/Gustavsonpy%E2%86%97-blue?style=flat-square)
-](https://github.com/Gustavsonpy)
-
-* **Leandro** [![Static Badge](https://img.shields.io/badge/LeandroPS121%E2%86%97-blue?style=flat-square)
-](https://github.com/LeandroPS121)
-
-* **Pedro** [![Static Badge](https://img.shields.io/badge/PHV00%E2%86%97-blue?style=flat-square)
-](https://github.com/PHV00)
-
-* **Sara** [![Static Badge](https://img.shields.io/badge/saraklamann%E2%86%97-blue?style=flat-square)
-](https://github.com/saraklamann)
